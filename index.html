@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-Commerce Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">WEBDASH</div>
+      <div id="search">
+        <form action="/action.php">
+          <input type="text" id="search_navbar" placeholder="Search 🔍" />
+        </form>
+      </div>
+      <div id="user_control">
+        <span class="user_controls">Welcome Riri 👤</span>
+        <span class="user_controls">⚙️</span>
+      </div>
+    </header>
+    <main>
+      <div id="left_section">
+        <div class="core_items active">Home</div>
+        <div class="core_items">Products</div>
+        <div class="core_items">Customers</div>
+        <div class="core_items">Analytics/Reports</div>
+        <div class="core_items">Inventory</div>
+        <div class="core_items">Store Settings</div>
+      </div>
+      <div id="main_section">
+        <div id="stats" class="Dashboard_Overview">
+          <div class="Stats_in_Dashboard_Overview"><span class="no_in_stats">3000+</span><span class="heading_of_stats">Total Customers</span></div>
+          <div class="Stats_in_Dashboard_Overview"><span class="no_in_stats">230+</span><span class="heading_of_stats">Total Products</span></div>
+          <div class="Stats_in_Dashboard_Overview"><span class="no_in_stats">1800+</span><span class="heading_of_stats">Total Orders</span></div>
+          <div class="Stats_in_Dashboard_Overview"><span class="no_in_stats">2500+</span><span class="heading_of_stats">Total Sales</span></div>
+        </div>
+        <div id="trends" class="Dashboard_Overview">
+          <div class="Trends_in_Dashboard_Overview" id="Bar_Graph">
+            <div id="Bar_Graph_Heading">
+              <span id="Monthly_Sales_Overview">Monthly Sales Overview</span>
+            </div>
+            <div id="Actual_Bar_Graph">
+              <div class="month" id="jan"></div>
+              <div class="month" id="feb"></div>
+              <div class="month" id="mar"></div>
+              <div class="month" id="apr"></div>
+              <div class="month" id="may"></div>
+              <div class="month" id="jun"></div>
+            </div>
+            <div id="x_axis">
+              <div class="month_label"><span>January</span></div>
+              <div class="month_label"><span>February</span></div>
+              <div class="month_label"><span>March</span></div>
+              <div class="month_label"><span>April</span></div>
+              <div class="month_label"><span>May</span></div>
+              <div class="month_label"><span>June</span></div>
+            </div>
+          </div>
+          <div class="Trends_in_Dashboard_Overview" id="Pie_Chart_Container">
+            <div id="Pie_Chart"></div>
+            <div id="Pie_Legend">
+              <div class="legend_item"><span class="legend_dot" id="dot_online"></span>Online Sales (70%)</div>
+              <div class="legend_item"><span class="legend_dot" id="dot_offline"></span>In-Store Sales (30%)</div>
+            </div>
+          </div>
+        </div>
+        <div id="recent_orders" class="Dashboard_Overview">
+          <div class="order_summary" id="all_orders">
+            <div id="heading_order_summary"><span>Order Summary</span></div>
+            <div id="headings_table">
+              <span>Product ID</span>
+              <span>Order ID</span>
+              <span>Date</span>
+              <span>Status</span>
+            </div>
+            <div id="table">
+              <div class="table_contents"><span>JCK2204</span><span>#2034110</span><span>Jun 23rd, 2026</span><span class="status_pending">Pending</span></div>
+              <div class="table_contents"><span>BDN2786</span><span>#2034111</span><span>Jun 23rd, 2026</span><span class="status_pending">Pending</span></div>
+              <div class="table_contents"><span>RNG3456</span><span>#2034112</span><span>Jun 20th, 2026</span><span class="status_completed">Completed</span></div>
+              <div class="table_contents"><span>SND1987</span><span>#2034113</span><span>Jun 19th, 2026</span><span class="status_pending">Pending</span></div>
+              <div class="table_contents"><span>JNS7789</span><span>#2034114</span><span>Jun 19th, 2026</span><span class="status_pending">Pending</span></div>
+              <div class="table_contents"><span>JCK2134</span><span>#2034115</span><span>Jun 17th, 2026</span><span class="status_completed">Completed</span></div>
+            </div>
+          </div>
+          <div class="order_summary" id="top_sold_items">
+            <div id="heading_top_sold_items"><span>Top Sold Items</span></div>
+            <div class="item_name"><span class="item_names">Jeans</span></div>
+            <div id="jeans_bar" class="item_bar"></div>
+            <div class="item_name"><span class="item_names">Jacket</span></div>
+            <div id="jacket_bar" class="item_bar"></div>
+            <div class="item_name"><span class="item_names">Sunglasses</span></div>
+            <div id="sunglasses_bar" class="item_bar"></div>
+            <div class="item_name"><span class="item_names">Bandana</span></div>
+            <div id="bandana_bar" class="item_bar"></div>
+            <div class="item_name"><span class="item_names">Sandals</span></div>
+            <div id="sandals_bar" class="item_bar"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
